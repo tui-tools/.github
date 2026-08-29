@@ -7,6 +7,11 @@ Each one is a **single static binary**. No daemon, no state of its own, nothing
 left running after you quit. They share a palette, a key language and one
 promise: the command in the confirm dialog is the command that executes.
 
+**[tui-tools.github.io](https://tui-tools.github.io)** — every tool, with
+screenshots, install commands per package manager, checksums and what each one
+can do to your machine. It is built from each repository's own `tool.json`, so
+a new tool appears there on its first release without anyone editing a page.
+
 ## The tools
 
 | Tool | What it does | |
