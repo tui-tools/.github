@@ -91,7 +91,9 @@ maintainers.
 ## Roadmap
 
 Next: **tui-docker** / **tui-podman**, then **tui-samba** (shares, users and
-live connections for a file server).
+live connections for a file server). Also on the list: a **firewalld backend
+for tui-firewall**, so Fedora and RHEL-family machines get the same screens
+ufw users have today.
 
 Want one sooner, or a different one? Open an issue on
 [tui-tools/.github](https://github.com/tui-tools/.github/issues).
