@@ -1,41 +1,78 @@
+# Rendered from tui-kit/templates/ISSUE_TEMPLATE/bug_report.yml for the whole
+# organization: repositories without their own form inherit this one, so the
+# tool name is asked for instead of baked in.
 name: Bug report
 description: Something the tool got wrong on a real machine
 labels: ["bug"]
 body:
+  - type: input
+    id: tool
+    attributes:
+      label: Which tool
+      description: "The repository name, e.g. tui-firewall."
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
-        Thanks for the report. The most useful bug reports here quote the
-        output the tool showed and the output of the command it drives.
+        Thanks for the report. The two things that make one useful here are the
+        `--report` block below and the exact steps that reproduce it.
+  - type: textarea
+    id: report
+    attributes:
+      label: Output of `the tool --report`
+      description: |
+        Run `the tool --report` and paste the output verbatim, without editing
+        it. It names the versions, the backend, the distribution, the kernel
+        and the terminal — and it deliberately carries no hostname, user name,
+        home path or address, so it is safe to publish as it is.
+      render: shell
+    validations:
+      required: true
   - type: textarea
     id: what
     attributes:
       label: What happened
-      description: What you did, what you expected, what you got instead.
+      description: What the tool did, in your own words.
     validations:
       required: true
   - type: textarea
-    id: version
+    id: steps
     attributes:
-      label: Versions
+      label: Steps to reproduce
       description: |
-        Output of `the tool --version`, your distribution and release, and the
-        version of the command the tool drives.
-      render: shell
+        The keystrokes or the command line, from starting the tool to the
+        moment it went wrong. If the state of the machine matters, say what it
+        was.
+      placeholder: |
+        1. Start `the tool`
+        2. …
+        3. …
     validations:
       required: true
+  - type: input
+    id: expected
+    attributes:
+      label: What you expected
+      description: "One line: what should have happened instead."
+    validations:
+      required: true
+  - type: checkboxes
+    id: demo
+    attributes:
+      label: Does it reproduce in demo mode?
+      description: |
+        `--demo` runs against sample data and never touches the system, so a
+        bug that shows up there is one anybody can reproduce on any machine.
+      options:
+        - label: I tried `the tool --demo`, and it reproduces there too
+        - label: I tried `the tool --demo`, and it does not reproduce there
   - type: textarea
     id: output
     attributes:
       label: Relevant output
       description: |
         Anything the tool printed, plus the raw output of the underlying
-        command if a parse looks wrong. Redact addresses you would rather not
-        publish.
+        command if a parse looks wrong. Redact anything you would rather not
+        publish — addresses, host names, rule comments.
       render: shell
-  - type: checkboxes
-    id: demo
-    attributes:
-      label: Does it reproduce in demo mode?
-      options:
-        - label: I tried `the tool --demo`
