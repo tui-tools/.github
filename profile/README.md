@@ -29,6 +29,7 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-cron**](https://github.com/tui-tools/tui-cron) | Every scheduled job on one screen, systemd timers and cron together, with each schedule read back in English next to the expression. | [![CI](https://github.com/tui-tools/tui-cron/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-cron/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-cron?label=release)](https://github.com/tui-tools/tui-cron/releases) |
 | [**tui-cert**](https://github.com/tui-tools/tui-cert) | Every TLS certificate on the machine, worst first: what expires when, whose key is not its key, and what a server is really serving. | [![CI](https://github.com/tui-tools/tui-cert/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-cert/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-cert?label=release)](https://github.com/tui-tools/tui-cert/releases) |
 | [**tui-containers**](https://github.com/tui-tools/tui-containers) | Every container on one screen, docker and podman together: what is wrong first, one container in full, and its log. | [![CI](https://github.com/tui-tools/tui-containers/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-containers/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-containers?label=release)](https://github.com/tui-tools/tui-containers/releases) |
+| [**tui-samba**](https://github.com/tui-tools/tui-samba) | The Samba file server: shares worst first with the Unix permissions behind them, the accounts, and who is connected right now. | [![CI](https://github.com/tui-tools/tui-samba/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-samba/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-samba?label=release)](https://github.com/tui-tools/tui-samba/releases) |
 
 | Also here | |
 | --- | --- |
@@ -51,6 +52,7 @@ tui-logs --demo
 tui-cron --demo
 tui-cert --demo
 tui-containers --demo
+tui-samba --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
@@ -92,12 +94,15 @@ maintainers.
 
 ## Roadmap
 
-Next: **tui-samba** (shares, users and live connections for a file server).
-Also on the list: a **firewalld backend for tui-firewall**, so Fedora and
-RHEL-family machines get the same screens ufw users have today.
+The list the family set out to build is complete: every tool above exists, runs
+and has a `--demo`. What comes next is depth rather than breadth — a
+**firewalld backend for tui-firewall**, so Fedora and RHEL-family machines get
+the same screens ufw users have today.
 
-Want one sooner, or a different one? Open an issue on
-[tui-tools/.github](https://github.com/tui-tools/.github/issues).
+Which means the next tool is whichever one somebody asks for. If there is a
+part of a Linux machine you keep reading through four commands and a manual
+page, open an issue on
+[tui-tools/.github](https://github.com/tui-tools/.github/issues) and say so.
 
 ## Status
 
