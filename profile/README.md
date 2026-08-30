@@ -26,6 +26,7 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-disk**](https://github.com/tui-tools/tui-disk) | Disks, mounts and fstab crossed against each other, btrfs filesystems in full and the SMART health of every drive. | [![CI](https://github.com/tui-tools/tui-disk/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-disk/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-disk?label=release)](https://github.com/tui-tools/tui-disk/releases) |
 | [**tui-ssh**](https://github.com/tui-tools/tui-ssh) | The SSH server as it really is: the effective sshd_config with a verdict per setting, live sessions, failed logins and host keys. | [![CI](https://github.com/tui-tools/tui-ssh/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-ssh/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-ssh?label=release)](https://github.com/tui-tools/tui-ssh/releases) |
 | [**tui-logs**](https://github.com/tui-tools/tui-logs) | The systemd journal: every filter a journalctl argument, the command it adds up to on screen, and vacuuming previewed before it runs. | [![CI](https://github.com/tui-tools/tui-logs/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-logs/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-logs?label=release)](https://github.com/tui-tools/tui-logs/releases) |
+| [**tui-cron**](https://github.com/tui-tools/tui-cron) | Every scheduled job on one screen, systemd timers and cron together, with each schedule read back in English next to the expression. | [![CI](https://github.com/tui-tools/tui-cron/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-cron/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-cron?label=release)](https://github.com/tui-tools/tui-cron/releases) |
 
 | Also here | |
 | --- | --- |
@@ -45,6 +46,7 @@ tui-update --demo
 tui-disk --demo
 tui-ssh --demo
 tui-logs --demo
+tui-cron --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
@@ -86,8 +88,8 @@ maintainers.
 
 ## Roadmap
 
-Next: **tui-docker** / **tui-podman**, then **tui-cron**, **tui-cert**,
-**tui-samba** (shares, users and live connections for a file server).
+Next: **tui-docker** / **tui-podman**, then **tui-cert**, **tui-samba**
+(shares, users and live connections for a file server).
 
 Want one sooner, or a different one? Open an issue on
 [tui-tools/.github](https://github.com/tui-tools/.github/issues).
