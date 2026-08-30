@@ -18,6 +18,7 @@ a new tool appears there on its first release without anyone editing a page.
 | --- | --- | --- |
 | [**tui-firewall**](https://github.com/tui-tools/tui-firewall) | The system firewall: rules, policies, logging. ufw today, firewalld planned. | [![CI](https://github.com/tui-tools/tui-firewall/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-firewall/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-firewall?label=release)](https://github.com/tui-tools/tui-firewall/releases) |
 | [**tui-systemd**](https://github.com/tui-tools/tui-systemd) | systemd units: what failed, the journal that explains why, timers, boot times. | [![CI](https://github.com/tui-tools/tui-systemd/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-systemd/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-systemd?label=release)](https://github.com/tui-tools/tui-systemd/releases) |
+| [**tui-snapper**](https://github.com/tui-tools/tui-snapper) | btrfs snapshots, managed by snapper: the history, what changed between any two, and undo. | [![CI](https://github.com/tui-tools/tui-snapper/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-snapper/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-snapper?label=release)](https://github.com/tui-tools/tui-snapper/releases) |
 
 | Also here | |
 | --- | --- |
@@ -29,6 +30,7 @@ a new tool appears there on its first release without anyone editing a page.
 ```sh
 tui-firewall --demo
 tui-systemd --demo
+tui-snapper --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
