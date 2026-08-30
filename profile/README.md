@@ -113,3 +113,8 @@ thing anyone can send right now.
 ## License
 
 MIT, per repository.
+
+## Maintainer
+
+Created and maintained by Edimar Cardoso (@edimarlnx on X, edimarlnx on
+GitHub). Sponsor this work: [github.com/sponsors/edimarlnx](https://github.com/sponsors/edimarlnx)
