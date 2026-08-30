@@ -70,6 +70,27 @@ color while keeping layout.
 files. They are **not** part of the Omarchy project and are not endorsed by its
 maintainers.
 
+## Roadmap
+
+Next, in this order:
+
+1. **tui-network**: interfaces, addresses, routes and DNS. systemd-networkd and
+   resolved first; NetworkManager and netplan later.
+2. **tui-secure**: one screen for the machine's security posture (Secure Boot,
+   SELinux or AppArmor mode and recent denials, firewall, sshd, pending
+   updates), with each fix handed to the tool that owns it.
+3. **tui-update**: package updates with the restart classifier and, where the
+   filesystem allows it, a snapshot before and a rollback after.
+
+Then: **tui-users** (accounts, groups, authorized keys, sudo), **tui-ssh**
+(`sshd_config` with `sshd -t` before apply, sessions, failed logins),
+**tui-disk** (btrfs subvolumes and maintenance, `lsblk`, `fstab`, SMART),
+**tui-logs** (the journal, split out of tui-systemd), **tui-docker** /
+**tui-podman**, **tui-cron**, **tui-cert**.
+
+Want one sooner, or a different one? Open an issue on
+[tui-tools/.github](https://github.com/tui-tools/.github/issues).
+
 ## Status
 
 Early, under validation. Expect rough edges, and please report them — a bug
