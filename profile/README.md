@@ -20,6 +20,7 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-systemd**](https://github.com/tui-tools/tui-systemd) | systemd units: what failed, the journal that explains why, timers, boot times. | [![CI](https://github.com/tui-tools/tui-systemd/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-systemd/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-systemd?label=release)](https://github.com/tui-tools/tui-systemd/releases) |
 | [**tui-snapper**](https://github.com/tui-tools/tui-snapper) | btrfs snapshots, managed by snapper: the history, what changed between any two, and undo. | [![CI](https://github.com/tui-tools/tui-snapper/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-snapper/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-snapper?label=release)](https://github.com/tui-tools/tui-snapper/releases) |
 | [**tui-network**](https://github.com/tui-tools/tui-network) | Links, addresses, routes and DNS: systemd-networkd and resolved, with the .network file behind each link. | [![CI](https://github.com/tui-tools/tui-network/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-network/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-network?label=release)](https://github.com/tui-tools/tui-network/releases) |
+| [**tui-secure**](https://github.com/tui-tools/tui-secure) | The machine's security posture: Secure Boot, SELinux or AppArmor, the firewall, sshd, updates and accounts, each with the command behind its verdict. | [![CI](https://github.com/tui-tools/tui-secure/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-secure/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-secure?label=release)](https://github.com/tui-tools/tui-secure/releases) |
 
 | Also here | |
 | --- | --- |
@@ -33,6 +34,7 @@ tui-firewall --demo
 tui-systemd --demo
 tui-snapper --demo
 tui-network --demo
+tui-secure --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
@@ -76,10 +78,7 @@ maintainers.
 
 Next, in this order:
 
-1. **tui-secure**: one screen for the machine's security posture (Secure Boot,
-   SELinux or AppArmor mode and recent denials, firewall, sshd, pending
-   updates), with each fix handed to the tool that owns it.
-2. **tui-update**: package updates with the restart classifier and, where the
+1. **tui-update**: package updates with the restart classifier and, where the
    filesystem allows it, a snapshot before and a rollback after.
 Then: **tui-users** (accounts, groups, authorized keys, sudo), **tui-ssh**
 (`sshd_config` with `sshd -t` before apply, sessions, failed logins),
