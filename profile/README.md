@@ -24,6 +24,7 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-users**](https://github.com/tui-tools/tui-users) | Local accounts, groups, authorized keys and sudo: who exists, what each one can do, and what is worth a second look. | [![CI](https://github.com/tui-tools/tui-users/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-users/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-users?label=release)](https://github.com/tui-tools/tui-users/releases) |
 | [**tui-update**](https://github.com/tui-tools/tui-update) | Pending package updates across pacman, apt and dnf: what they restart or reboot, what is a security fix, and a snapshot before. | [![CI](https://github.com/tui-tools/tui-update/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-update/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-update?label=release)](https://github.com/tui-tools/tui-update/releases) |
 | [**tui-disk**](https://github.com/tui-tools/tui-disk) | Disks, mounts and fstab crossed against each other, btrfs filesystems in full and the SMART health of every drive. | [![CI](https://github.com/tui-tools/tui-disk/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-disk/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-disk?label=release)](https://github.com/tui-tools/tui-disk/releases) |
+| [**tui-ssh**](https://github.com/tui-tools/tui-ssh) | The SSH server as it really is: the effective sshd_config with a verdict per setting, live sessions, failed logins and host keys. | [![CI](https://github.com/tui-tools/tui-ssh/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-ssh/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-ssh?label=release)](https://github.com/tui-tools/tui-ssh/releases) |
 
 | Also here | |
 | --- | --- |
@@ -41,6 +42,7 @@ tui-secure --demo
 tui-users --demo
 tui-update --demo
 tui-disk --demo
+tui-ssh --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
@@ -82,11 +84,7 @@ maintainers.
 
 ## Roadmap
 
-Next, in this order:
-
-1. **tui-ssh**: `sshd_config` with `sshd -t` before apply, live sessions and
-   failed logins.
-Then: **tui-logs** (the journal, split out of tui-systemd), **tui-docker** /
+Next: **tui-logs** (the journal, split out of tui-systemd), then **tui-docker** /
 **tui-podman**, **tui-cron**, **tui-cert**, **tui-samba** (shares, users and live
 connections for a file server).
 
