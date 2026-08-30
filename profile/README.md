@@ -81,15 +81,12 @@ Next, in this order:
    updates), with each fix handed to the tool that owns it.
 3. **tui-update**: package updates with the restart classifier and, where the
    filesystem allows it, a snapshot before and a rollback after.
-4. **tui-samba**: shares, Samba users and live connections for a file server,
-   with `testparm` before every change. Active Directory DC later, as its own
-   tool.
-
 Then: **tui-users** (accounts, groups, authorized keys, sudo), **tui-ssh**
 (`sshd_config` with `sshd -t` before apply, sessions, failed logins),
 **tui-disk** (btrfs subvolumes and maintenance, `lsblk`, `fstab`, SMART),
 **tui-logs** (the journal, split out of tui-systemd), **tui-docker** /
-**tui-podman**, **tui-cron**, **tui-cert**.
+**tui-podman**, **tui-cron**, **tui-cert**, **tui-samba** (shares, users and live
+connections for a file server).
 
 Want one sooner, or a different one? Open an issue on
 [tui-tools/.github](https://github.com/tui-tools/.github/issues).
