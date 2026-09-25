@@ -37,6 +37,22 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-kit**](https://github.com/tui-tools/tui-kit) | The shared foundation: theme, widgets, config loader, command runner. [![CI](https://github.com/tui-tools/tui-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-kit/actions/workflows/ci.yml) |
 | [**tui-template**](https://github.com/tui-tools/tui-template) | A working skeleton for a new tool. Press **Use this template**. |
 
+## Maintainers of the projects behind the tools
+
+Every tool here is a terminal UI in front of someone else's project: headscale,
+tailscale, ufw, firewalld, nftables, certbot, acme.sh, Samba, snapper, systemd,
+WireGuard and more. If you are an official maintainer of one of those projects,
+you are welcome to contribute to the tool that drives it with pull requests. If
+you would like to take over or share the maintenance of that tool, get in touch
+and we can look at making you a maintainer of its repository. The people
+responsible for a project are the ones best placed to shape the terminal UI in
+front of it.
+
+Reach Edimar on X at [@edimarlnx](https://x.com/edimarlnx), or open an issue in
+the tool's repository labelled `upstream`. If you cannot set labels there, put
+the word in the title and it will be added for you. The site lists
+[which projects each tool drives](https://tui.tools/about/#maintainers).
+
 ## Try one without a machine to risk
 
 ```sh
