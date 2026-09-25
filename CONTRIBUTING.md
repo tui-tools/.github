@@ -13,6 +13,18 @@ of the tool it drives, and what the tool showed you.
 - Add a test for parsing changes. Every parser in the family is table-driven
   against real command output — paste the output you saw into a new case.
 
+## If you maintain the upstream project
+
+If you are an official maintainer of a project one of these tools drives
+(headscale, tailscale, ufw, firewalld, nftables, certbot, acme.sh, Samba,
+snapper, systemd, WireGuard and so on), pull requests to the tool that fronts it
+are welcome, the same way as anyone else's. If you would like to take over or
+share the maintenance of that tool, that starts with a conversation: reach
+Edimar on X at [@edimarlnx](https://x.com/edimarlnx), or open an issue in the
+tool's repository labelled `upstream` (if you cannot set labels there, put the
+word in the title). The people responsible for a project are the ones best
+placed to shape the terminal UI in front of it.
+
 ## House rules
 
 These are not style preferences, they are what makes the family coherent.
