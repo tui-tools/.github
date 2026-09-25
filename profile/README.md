@@ -31,6 +31,7 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-containers**](https://github.com/tui-tools/tui-containers) | Every container on one screen, docker and podman together: what is wrong first, one container in full, and its log. | [![CI](https://github.com/tui-tools/tui-containers/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-containers/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-containers?label=release)](https://github.com/tui-tools/tui-containers/releases) |
 | [**tui-samba**](https://github.com/tui-tools/tui-samba) | The Samba file server: shares worst first with the Unix permissions behind them, the accounts, and who is connected right now. | [![CI](https://github.com/tui-tools/tui-samba/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-samba/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-samba?label=release)](https://github.com/tui-tools/tui-samba/releases) |
 | [**tui-tailscale**](https://github.com/tui-tools/tui-tailscale) | Self-hosted Tailscale from the terminal, both ends of it: the Headscale control plane on this host, and this machine as a tailnet node. | [![CI](https://github.com/tui-tools/tui-tailscale/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-tailscale/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-tailscale?label=release)](https://github.com/tui-tools/tui-tailscale/releases) |
+| [**tui-wireguard**](https://github.com/tui-tools/tui-wireguard) | WireGuard interfaces and peers, and the host around them: whether the firewall lets a handshake in, forwarding and NAT for a server, and no private key ever on screen. | [![CI](https://github.com/tui-tools/tui-wireguard/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-wireguard/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-wireguard?label=release)](https://github.com/tui-tools/tui-wireguard/releases) |
 
 | Also here | |
 | --- | --- |
@@ -71,6 +72,7 @@ tui-cert --demo
 tui-containers --demo
 tui-samba --demo
 tui-tailscale --demo
+tui-wireguard --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
