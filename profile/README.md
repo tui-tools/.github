@@ -51,7 +51,7 @@ front of it.
 Reach Edimar on X at [@edimarlnx](https://x.com/edimarlnx), or open an issue in
 the tool's repository labelled `upstream`. If you cannot set labels there, put
 the word in the title and it will be added for you. The site lists
-[which projects each tool drives](https://tui-tools.github.io/about/#maintainers).
+[which projects each tool drives](https://tui.tools/about/#maintainers).
 
 ## Try one without a machine to risk
 
