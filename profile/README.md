@@ -30,6 +30,7 @@ a new tool appears there on its first release without anyone editing a page.
 | [**tui-cert**](https://github.com/tui-tools/tui-cert) | Every TLS certificate on the machine, worst first: what expires when, whose key is not its key, and what a server is really serving. | [![CI](https://github.com/tui-tools/tui-cert/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-cert/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-cert?label=release)](https://github.com/tui-tools/tui-cert/releases) |
 | [**tui-containers**](https://github.com/tui-tools/tui-containers) | Every container on one screen, docker and podman together: what is wrong first, one container in full, and its log. | [![CI](https://github.com/tui-tools/tui-containers/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-containers/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-containers?label=release)](https://github.com/tui-tools/tui-containers/releases) |
 | [**tui-samba**](https://github.com/tui-tools/tui-samba) | The Samba file server: shares worst first with the Unix permissions behind them, the accounts, and who is connected right now. | [![CI](https://github.com/tui-tools/tui-samba/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-samba/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-samba?label=release)](https://github.com/tui-tools/tui-samba/releases) |
+| [**tui-tailscale**](https://github.com/tui-tools/tui-tailscale) | Self-hosted Tailscale from the terminal, both ends of it: the Headscale control plane on this host, and this machine as a tailnet node. | [![CI](https://github.com/tui-tools/tui-tailscale/actions/workflows/ci.yml/badge.svg)](https://github.com/tui-tools/tui-tailscale/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/tui-tools/tui-tailscale?label=release)](https://github.com/tui-tools/tui-tailscale/releases) |
 
 | Also here | |
 | --- | --- |
@@ -53,6 +54,7 @@ tui-cron --demo
 tui-cert --demo
 tui-containers --demo
 tui-samba --demo
+tui-tailscale --demo
 ```
 
 `--demo` runs against sample data. Every key works, every command is built and
